@@ -4,7 +4,7 @@ Just make step-by-step from [this](https://www.freecodecamp.org/news/a-beginners
 
 > Note: the name of the repository from GitHub and will be the name of the folder with the project on the local machine.
 
-> Example: on GitHub `[GITHUB NAME] / MyRepository` ==> on local machine `[PATH TO FOLDER]/MyRepository` 
+> Example: `[GITHUB NAME] / MyRepository` ==> `[PATH TO FOLDER]/MyRepository` 
 
 
 1. назва репозиторію з ГітХаба і буде назвою папки з проєктом на локальній машині
