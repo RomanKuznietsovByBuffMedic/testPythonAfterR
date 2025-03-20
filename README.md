@@ -20,7 +20,8 @@ Just make step-by-step from [this](https://www.freecodecamp.org/news/a-beginners
 $ cd [PATH TO FOLDER]
 $ git clone [HTTPS ADDRESS]
 
-This make [PATH TO FOLDER]/MyRepository folder with project --- MyRepository
+This make folder `[PATH TO FOLDER]/MyRepository`
+with project --- `MyRepository`
 ```
 
 ---
