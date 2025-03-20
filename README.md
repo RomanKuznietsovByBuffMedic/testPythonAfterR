@@ -2,9 +2,11 @@
 
 Just make step-by-step from [this](https://www.freecodecamp.org/news/a-beginners-guide-to-git-how-to-create-your-first-github-project-c3ff53f56861/) tutorial
 
-> Note: the name of the repository from GitHub and will be the name of the folder with the project on the local machine.
+> **Note**: the name of the repository from GitHub and will be the name of the folder with the project on the local machine.
 
-> Example: `[GITHUB NAME] / MyRepository` ==> `[PATH TO FOLDER]/MyRepository` 
+> **Example**: 
+
+>`[GITHUB NAME] / MyRepository` => `[PATH TO FOLDER]/MyRepository` 
 
 
 1. назва репозиторію з ГітХаба і буде назвою папки з проєктом на локальній машині
