@@ -4,17 +4,19 @@ Just make step-by-step from [this](https://www.freecodecamp.org/news/a-beginners
 
 ---
 
-> **Note**: the name of the repository from GitHub and will be the name of the folder with the project on the local machine.
+> **Note 1**: the name of the repository from GitHub and will be the name of the folder with the project on the local machine.
 
-> **Example**: 
+**Example**: 
 
->`[GITHUB NAME] / MyRepository` => `[PATH TO FOLDER]/MyRepository` 
+```
+`[GITHUB NAME] / MyRepository` => `[PATH TO FOLDER]/MyRepository` 
+```
 
 ---
 
-> **Note**: in the terminal before `git clone [HTTPS ADDRESS]` go to the folder where the folder from GitHub will be created
+> **Note 2**: in the terminal before `git clone [HTTPS ADDRESS]` go to the folder where the folder from GitHub will be created
 
-> **Example**: 
+**Example**: 
 
 ```
 $ cd [PATH TO FOLDER]
