@@ -16,6 +16,22 @@ tutorial.
 
 ---
 
+> **Before use**: in the terminal always check the folder you are in. 
+
+**Example**: 
+
+don't do this
+```
+user@machine: [SOME PATH]/VSCODE/$ git add .
+```
+do this
+```
+user@machine: [SOME PATH]/VSCODE/MyRepository$ git add .
+```
+for added files from MyRepository
+
+---
+
 > **Path repo**: in the terminal before `git clone [HTTPS ADDRESS]` go to the folder where the folder from GitHub will be created.
 
 **Example**: 
@@ -41,4 +57,18 @@ On branch **main**
 some text
 ```
 $ git push origin main
+```
+
+## How use?
+
+### If don't create files
+```
+git commit -am "[MESSAGE]"
+git push
+```
+### Else
+```
+git add .
+git commit -m "MESSAGE"
+git push
 ```
