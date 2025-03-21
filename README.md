@@ -6,7 +6,7 @@ tutorial.
 
 ## Notes
 
-> **Name repo**: the  name of the repository from GitHub will be the name of the folder with the project on the local machine.
+> **Name repo**: the name of the repository from GitHub will be the name of the folder with the project on the local machine.
 
 **Example**: 
 
@@ -28,7 +28,7 @@ do this
 ```
 user@machine: [SOME PATH]/VSCODE/MyRepository$ git add .
 ```
-for added files from MyRepository
+for added files from "MyRepository"
 
 ---
 
@@ -61,7 +61,7 @@ $ git push origin main
 
 ## How use?
 
-### If don't create files
+### If you don't create files
 ```
 git commit -am "[MESSAGE]"
 git push
@@ -72,3 +72,4 @@ git add .
 git commit -m "MESSAGE"
 git push
 ```
+
