@@ -6,7 +6,7 @@ tutorial.
 
 ## Notes
 
-> **Name repo**: the name of the repository from GitHub will be the name of the folder with the project on the local machine.
+> **Name repo**: the  name of the repository from GitHub will be the name of the folder with the project on the local machine.
 
 **Example**: 
 
@@ -29,7 +29,7 @@ This make project folder `[PATH TO FOLDER]/MyRepository`.
 
 ---
 
-> **First push**: the first time you use `git push` use the branch that is shown in `git status`
+> **First push**: the first time you use `git push` use the branch that is shown in `git status`.
 
 **Example**: 
 
