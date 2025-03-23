@@ -69,7 +69,35 @@ git push
 ### Else
 ```
 git add .
-git commit -m "MESSAGE"
+git commit -m "[MESSAGE]"
 git push
 ```
 
+# About packeges
+
+> Note: use all command in the terminal
+
+## Save all the packages you have
+```
+pip freeze > requirements.txt
+```
+
+## Install all packages that are in the requirements.txt file
+```
+pip install -r requirements.txt
+```
+
+## Remove all the packages you have
+```
+pip freeze | xargs pip uninstall -y
+```
+
+## Remove pip
+```
+pip uninstall pip
+```
+
+## install pip
+Use 
+[this](https://pip.pypa.io/en/stable/installation/)
+guide.
