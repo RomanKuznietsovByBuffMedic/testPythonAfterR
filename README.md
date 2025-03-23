@@ -9,7 +9,6 @@ To understand what is happening and why, it is better to read
 
 >Tip: from the beginning, quickly review the section, if it is complicated or you do not know how to use it right now --- skip it.
 
-
 ## Repository name
 The name of the repository from GitHub will be the name of the folder with the project on the local machine.
 
@@ -54,11 +53,10 @@ The first time you use `git push` use the branch that is shown in `git status`.
 
 ```
 $ git status
-```
-On branch **main**
+On branch main
 
 some text
-```
+
 $ git push origin main
 ```
 
@@ -76,6 +74,7 @@ git commit -m "[MESSAGE]"
 git push
 ```
 
+---
 ---
 ---
 
