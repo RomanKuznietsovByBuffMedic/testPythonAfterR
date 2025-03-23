@@ -1,12 +1,18 @@
-# How use Git and GitHub
+# How use Git and GitHub?
 
 Just make step-by-step from 
 [this](https://www.freecodecamp.org/news/a-beginners-guide-to-git-how-to-create-your-first-github-project-c3ff53f56861/)
 tutorial.
 
-## Notes
+To understand what is happening and why, it is better to read 
+[this](https://git-scm.com/book/en/v2).
 
-> **Name repo**: the name of the repository from GitHub will be the name of the folder with the project on the local machine.
+>Tip: from the beginning, quickly review the section, if it is complicated or you do not know how to use it right now --- skip it.
+
+## Warnings
+
+### Name repo
+The name of the repository from GitHub will be the name of the folder with the project on the local machine.
 
 **Example**: 
 
@@ -14,9 +20,8 @@ tutorial.
 `[GITHUB NAME] / MyRepository` => `[PATH TO FOLDER]/MyRepository` 
 ```
 
----
-
-> **Before use**: in the terminal always check the folder you are in. 
+### Before use
+In the terminal always check the folder you are in. 
 
 **Example**: 
 
@@ -30,9 +35,9 @@ user@machine: [SOME PATH]/VSCODE/MyRepository$ git add .
 ```
 for added files from "MyRepository"
 
----
 
-> **Path repo**: in the terminal before `git clone [HTTPS ADDRESS]` go to the folder where the folder from GitHub will be created.
+### Path repo
+In the terminal before `git clone [HTTPS ADDRESS]` go to the folder where the folder from GitHub will be created.
 
 **Example**: 
 
@@ -43,9 +48,8 @@ $ git clone [HTTPS ADDRESS]
 
 This make project folder `[PATH TO FOLDER]/MyRepository`.
 
----
-
-> **First push**: the first time you use `git push` use the branch that is shown in `git status`.
+### First push
+The first time you use `git push` use the branch that is shown in `git status`.
 
 **Example**: 
 
@@ -59,7 +63,7 @@ some text
 $ git push origin main
 ```
 
-## How use?
+## How everyday use?
 
 ### If you don't create files
 ```
@@ -73,6 +77,9 @@ git commit -m "[MESSAGE]"
 git push
 ```
 
+---
+---
+
 # About packeges
 
 > Note: use all command in the terminal
@@ -82,7 +89,7 @@ git push
 pip freeze > requirements.txt
 ```
 
-## Install all packages that are in the requirements.txt file
+## Install all packages that are in the requirements.txt
 ```
 pip install -r requirements.txt
 ```
