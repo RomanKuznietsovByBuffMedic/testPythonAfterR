@@ -74,6 +74,32 @@ git commit -m "[MESSAGE]"
 git push
 ```
 
+
+## Create new branch
+```
+git branch [BRANCH NAME]
+```
+
+## Check branches
+```
+git log --oneline --decorate
+```
+
+## Switch betwen branches
+```
+git checkout [BRANCH NAME]
+```
+
+## Advance check branchs
+```
+git log --oneline --decorate --graph --all
+```
+
+## Crate and switch to the branch
+```
+git checkout -b [BRANCH NAME]
+```
+
 ---
 ---
 ---
