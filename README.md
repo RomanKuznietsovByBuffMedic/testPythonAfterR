@@ -14,7 +14,7 @@ To understand what is happening and why, it is better to read
 ### Name repo
 The name of the repository from GitHub will be the name of the folder with the project on the local machine.
 
-**Example**: 
+*Example*: 
 
 ```
 `[GITHUB NAME] / MyRepository` => `[PATH TO FOLDER]/MyRepository` 
@@ -23,7 +23,7 @@ The name of the repository from GitHub will be the name of the folder with the p
 ### Before use
 In the terminal always check the folder you are in. 
 
-**Example**: 
+*Example*: 
 
 don't do this
 ```
@@ -39,7 +39,7 @@ for added files from "MyRepository"
 ### Path repo
 In the terminal before `git clone [HTTPS ADDRESS]` go to the folder where the folder from GitHub will be created.
 
-**Example**: 
+*Example*: 
 
 ```
 $ cd [PATH TO FOLDER]
@@ -51,7 +51,7 @@ This make project folder `[PATH TO FOLDER]/MyRepository`.
 ### First push
 The first time you use `git push` use the branch that is shown in `git status`.
 
-**Example**: 
+*Example*: 
 
 ```
 $ git status
