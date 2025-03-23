@@ -106,6 +106,11 @@ $ git checkout main
 $ git merge [BRANCH NAME]
 ```
 
+## Delete branch
+```
+$ git branch -d [BRANCH NAME]
+```
+
 ---
 ---
 ---
