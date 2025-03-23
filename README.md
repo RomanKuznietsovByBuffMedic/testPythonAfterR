@@ -9,9 +9,8 @@ To understand what is happening and why, it is better to read
 
 >Tip: from the beginning, quickly review the section, if it is complicated or you do not know how to use it right now --- skip it.
 
-## Warnings
 
-### Name repo
+## Repository name
 The name of the repository from GitHub will be the name of the folder with the project on the local machine.
 
 *Example*: 
@@ -20,8 +19,8 @@ The name of the repository from GitHub will be the name of the folder with the p
 `[GITHUB NAME] / MyRepository` => `[PATH TO FOLDER]/MyRepository` 
 ```
 
-### Before use
-In the terminal always check the folder you are in. 
+## Before use
+In the terminal, always check the folder you are in. 
 
 *Example*: 
 
@@ -36,7 +35,7 @@ user@machine: [SOME PATH]/VSCODE/MyRepository$ git add .
 for added files from "MyRepository"
 
 
-### Path repo
+## Repository path
 In the terminal before `git clone [HTTPS ADDRESS]` go to the folder where the folder from GitHub will be created.
 
 *Example*: 
@@ -48,7 +47,7 @@ $ git clone [HTTPS ADDRESS]
 
 This make project folder `[PATH TO FOLDER]/MyRepository`.
 
-### First push
+## First push
 The first time you use `git push` use the branch that is shown in `git status`.
 
 *Example*: 
@@ -80,7 +79,7 @@ git push
 ---
 ---
 
-# About packeges
+# Python packages
 
 > Note: use all command in the terminal
 
