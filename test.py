@@ -1,46 +1,49 @@
-# Import packeges
-
-# for better print code and result of code
-# https://pypi.org/project/termcolor/
-from termcolor import colored, cprint
-
-
 # define functions
 
-def print_code_and_result(code: str) -> None:
+# for better print code and result of code
+def print_chunk_of_code(chunk_title: str, code: str) -> None:
     '''
-    This function prints the code and the result of the code.
+    This function prints the `chunk_title`, the `code` and the result `code`.
 
     Args:
+        str (chunk_title): The chunk title of the code.
         str (code): The code to execute.
     Returns:
         None
     '''
-    print(colored("Code:", "green"), code)
-    cprint("Result:", "blue")
-    exec(code)
 
 
-def print_chank_of_code(object_title: str, code: str) -> None:
-    '''
-    This function prints the object_title, the code and the result code.
+    # https://pypi.org/project/termcolor/
+    from termcolor import colored, cprint
 
-    Args:
-        str (object_title): The object_title of the code.
-        str (code): The code to execute.
-    Returns:
-        None
-    '''
-    print("-----------------------------------------")
-    cprint("TEST " + object_title, "red")
-    print("~~~~~~~~~~~~~~~")
+
+    def print_code_and_result(code: str) -> None:
+        '''
+        This function prints the `code` and the result of the `code`.
+
+        Args:
+            str (code): The code to execute.
+        Returns:
+            None
+        '''
+        print(colored("Code:", "green"), code)
+        cprint("Result:", "blue")
+        exec(code)
+
+
+    cprint("-----------------------------------------\n" +
+           "TEST " +
+           chunk_title +
+           "\n~~~~~~~~~~~~~~~",
+                      
+           "red")
     print_code_and_result(code)
     print("~~~~~~~~~~~~~~~\n")
 
 
 # main
 
-print_chank_of_code("`print()`",
+print_chunk_of_code("`print()`",
 """
 print("Hello, World!")
 print("Ah shit, here we go again")
@@ -48,7 +51,7 @@ print("Ah shit, here we go again")
 
 
 
-print_chank_of_code("variable",
+print_chunk_of_code("variable",
 """
 msg = "I'm so tired"
 print(msg)
@@ -56,7 +59,7 @@ print(msg)
 
 
 
-print_chank_of_code("`import`",
+print_chunk_of_code("`import`",
 """
 # https://pypi.org/project/numpy/
 import numpy as np
@@ -66,14 +69,14 @@ print(np.random.rand(1, 3))
 
 
 
-print_chank_of_code("bullean expression",
+print_chunk_of_code("boolean expression",
 """
 print(1 < 2 and 2)
 """)
 
 
 
-print_chank_of_code("name what start with _",
+print_chunk_of_code("name what start with _",
 """
 _1 = 1
 print("_1 = ", _1)
@@ -81,7 +84,7 @@ print("_1 = ", _1)
 
 
 
-print_chank_of_code("coment in string",
+print_chunk_of_code("comment in string",
 """
 m = "#3" #4
 print(m)
@@ -89,7 +92,7 @@ print(m)
 
 
 
-print_chank_of_code("string comprassion",
+print_chunk_of_code("string comparison",
 """
 print("abc" < "abd")
 print("a" > "A")
@@ -98,7 +101,7 @@ print("z" > "abc")
 
 
 
-print_chank_of_code("`[]`",
+print_chunk_of_code("`[]`",
 """
 word = "hamster"
 
@@ -117,7 +120,7 @@ print(word[:3])
 
 
 
-print_chank_of_code("type importance",
+print_chunk_of_code("type importance",
 """
 print("1" == 1)
 # print(12 in 123) # TypeError
@@ -125,7 +128,7 @@ print("1" == 1)
 
 
 
-print_chank_of_code("unit tests by `assert_equal()`",
+print_chunk_of_code("unit tests by `assert_equal()`",
 """ 
 # https://github.com/python-bakery/bakery-support-library
 from bakery import assert_equal
@@ -150,7 +153,7 @@ assert_equal(calculate_area(4, 5), 21)
 
 
 
-print_chank_of_code("initialize in `if`",
+print_chunk_of_code("initialize in `if`",
 """
 hour = 7
 
@@ -166,7 +169,7 @@ print(time)
 
 
 
-print_chank_of_code("truthy valuies",
+print_chunk_of_code("truthy valuies",
 """
 # This is False because True is not equal to 5
 print(True == 5)
@@ -177,7 +180,7 @@ print(True == bool(5))
 
 
 
-print_chank_of_code("easy way to create a class by `dataclass`",
+print_chunk_of_code("easy way to create a class by `dataclass`",
 """
 # Required import
 from dataclasses import dataclass
@@ -199,7 +202,7 @@ print(my_box)
 
 
 
-print_chank_of_code("test change value of `dataclass`",
+print_chunk_of_code("test change value of `dataclass`",
 """
 from dataclasses import dataclass
 
