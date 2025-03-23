@@ -64,40 +64,46 @@ $ git push origin main
 
 ### If you don't create files
 ```
-git commit -am "[MESSAGE]"
-git push
+$ git commit -am "[MESSAGE]"
+$ git push
 ```
 ### Else
 ```
-git add .
-git commit -m "[MESSAGE]"
-git push
+$ git add .
+$ git commit -m "[MESSAGE]"
+$ git push
 ```
 
 
 ## Create new branch
 ```
-git branch [BRANCH NAME]
+$ git branch [BRANCH NAME]
 ```
 
 ## Check branches
 ```
-git log --oneline --decorate
+$ git log --oneline --decorate
 ```
 
 ## Switch betwen branches
 ```
-git checkout [BRANCH NAME]
+$ git checkout [BRANCH NAME]
 ```
 
 ## Advance check branchs
 ```
-git log --oneline --decorate --graph --all
+$ git log --oneline --decorate --graph --all
 ```
 
 ## Crate and switch to the branch
 ```
-git checkout -b [BRANCH NAME]
+$ git checkout -b [BRANCH NAME]
+```
+
+## Merge branches
+```
+$ git checkout main
+$ git merge [BRANCH NAME]
 ```
 
 ---
@@ -110,22 +116,22 @@ git checkout -b [BRANCH NAME]
 
 ## Save all the packages you have
 ```
-pip freeze > requirements.txt
+$ pip freeze > requirements.txt
 ```
 
 ## Install all packages that are in the requirements.txt
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 ## Remove all the packages you have
 ```
-pip freeze | xargs pip uninstall -y
+$ pip freeze | xargs pip uninstall -y
 ```
 
 ## Remove pip
 ```
-pip uninstall pip
+$ pip uninstall pip
 ```
 
 ## install pip
