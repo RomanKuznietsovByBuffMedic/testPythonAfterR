@@ -111,6 +111,12 @@ $ git merge [BRANCH NAME]
 $ git branch -d [BRANCH NAME]
 ```
 
+## Git ignoring files
+Create a file called `.gitignore` in the repository folder and write a list of files there.
+
+Read more 
+[here](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository).
+
 ---
 ---
 ---
