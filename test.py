@@ -162,14 +162,14 @@ hour = 7
 # and this make an error
 
 if hour > 6:
-    time = "It is dayligtht"
+    time = "It is day light"
 
 print(time)
 """)
 
 
 
-print_chunk_of_code("truthy valuies",
+print_chunk_of_code("truthy values",
 """
 # This is False because True is not equal to 5
 print(True == 5)
