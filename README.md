@@ -1,3 +1,8 @@
+# Remembering Python basics
+From 
+[this](https://vscodeedu.com/courses/intro-to-python) 
+course.
+
 # How use Git and GitHub?
 
 Just make step-by-step from 
@@ -85,12 +90,12 @@ $ git branch [BRANCH NAME]
 $ git log --oneline --decorate
 ```
 
-## Switch betwen branches
+## Switch between branches
 ```
 $ git checkout [BRANCH NAME]
 ```
 
-## Advance check branchs
+## Advance check branches
 ```
 $ git log --oneline --decorate --graph --all
 ```
