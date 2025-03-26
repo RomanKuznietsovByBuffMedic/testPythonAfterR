@@ -28,7 +28,7 @@ def print_chunk_of_code(chunk_title: str, code: str) -> None:
         '''
         print(colored("Code:", "green"), code)
         cprint("Result:", "blue")
-        exec(code, {})
+        exec(code)
 
 
     cprint("-----------------------------------------\n" +
@@ -220,53 +220,3 @@ print("Ada's name is", ada.name)
 """)
 
 
-
-# convert one `dataclass` to another `dataclass`
-print_chunk_of_code("convert",
-"""
-from dataclasses import dataclass
-from bakery import assert_equal
-
-@dataclass
-class Square:
-    color: str
-    width: int
-    
-@dataclass
-class Circle:
-    radius: int
-    color: str
-
-def square_to_circle(a_square: Square) -> Circle:
-    return Circle(a_square.width, a_square.color)
-
-Circle(2, "red")
-Circle(3, "blue")
-
-assert_equal(square_to_circle(Square("red", 5)), Circle(2, "red"))
-assert_equal(square_to_circle(Square("blue", 3)), Circle(3, "blue"))
-""")
-
-
-
-print_chunk_of_code("convert one `dataclass` to another `dataclass`",
-"""
-from dataclasses import dataclass
-from bakery import assert_equal
-
-@dataclass
-class Square:
-    color: str
-    width: int
-    
-@dataclass
-class Circle:
-    radius: int
-    color: str
-
-def square_to_circle(a_square: Square) -> Circle:
-    return Circle(a_square.width, a_square.color)
-
-assert_equal(square_to_circle(Square("red", 5)), Circle(2, "red"))
-assert_equal(square_to_circle(Square("blue", 3)), Circle(3, "blue"))
-""")
