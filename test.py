@@ -202,7 +202,7 @@ print(my_box)
 
 
 
-print_chunk_of_code("test change value of `dataclass`",
+print_chunk_of_code("change value of `dataclass`",
 """
 from dataclasses import dataclass
 
@@ -218,3 +218,51 @@ print("Ada's name is", ada.name)
 ada.name = "adam"
 print("Ada's name is", ada.name)
 """)
+
+
+
+
+print_chunk_of_code("`dataclass` with math operators",
+"""
+from dataclasses import dataclass
+
+@dataclass
+class Circle:
+    radius: int
+    color: str
+
+red_circle = Circle(5, "red")
+blue_circle = Circle(5, "blue")
+
+
+# All of these cause an error!
+# print(red_circle + blue_circle)
+# print(red_circle * blue_circle)
+# print(red_circle < blue_circle)
+
+
+# Both of these are True
+print(red_circle != blue_circle)
+print(red_circle == Circle(5, "red"))
+""")
+
+
+
+print_chunk_of_code("`dataclass` with functions",
+"""
+from bakery import assert_equal
+from dataclasses import dataclass
+
+@dataclass
+class Rectangle:
+    length: int
+    width: int
+
+def area(rect: Rectangle) -> int:
+    return rect.length * rect.width
+
+box = Rectangle(5, 3)
+assert_equal(area(box), 15)
+""")
+
+
