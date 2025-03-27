@@ -43,248 +43,77 @@ def print_chunk_of_code(chunk_title: str, code: str) -> None:
 
 # main
 
-print_chunk_of_code("`print()`",
+print_chunk_of_code("create lists", 
 """
-print("Hello, World!")
-print("Ah shit, here we go again")
+# List of integers
+print([45, 55, 32])
+
+# List of strings
+print(["Apples", "Oranges", "Bananas"])
+
+# List of booleans
+print([True, False, True])
+
+# Empty List
+print([])
+
+# List of mixed data types
+print([45, "Hello", True, 3.14])
+""")
+
+print_chunk_of_code("truthy and falsy lists",
+"""
+my_money = []
+if my_money:
+    print("I have some money!")
+else:
+    # this will be printed
+    print("I have no money.")
+
+your_money = [10, 10, 20, 1, 1]
+if your_money:
+    # this will be printed
+    print("You have some money!")
+else:
+    print("You have no money.")
 """)
 
 
 
-print_chunk_of_code("variable",
+print_chunk_of_code("lists in functions",
 """
-msg = "I'm so tired"
-print(msg)
+def function(alpha: list[str]) -> list[int]:
+    pass
 """)
 
 
+points = [1, 30, 9]
+ordered_points = [1, 9, 30]
+text_points = ["1", "9", "30"]
 
-print_chunk_of_code("`import`",
-"""
-# https://pypi.org/project/numpy/
-import numpy as np
+print("points == ordered_points is " + str(points == ordered_points))
+print("points == text_points is " + str(points == text_points))
+# add + -  * / **  with lists
 
-print(np.random.rand(1, 3))
-""")
 
 
 
-print_chunk_of_code("boolean expression",
-"""
-print(1 < 2 and 2)
-""")
 
 
 
-print_chunk_of_code("name what start with _",
-"""
-_1 = 1
-print("_1 = ", _1)
-""")
 
 
 
-print_chunk_of_code("comment in string",
-"""
-m = "#3" #4
-print(m)
-""")
+names = ["Alice", "Bob", "Carol"]
 
+print("Carol" in names)
+# True
 
+print("Ellie" in names)
+# False
 
-print_chunk_of_code("string comparison",
-"""
-print("abc" < "abd")
-print("a" > "A")
-print("z" > "abc")
-""")
+print("Car" in names)
+# False
 
-
-
-print_chunk_of_code("`[]`",
-"""
-word = "hamster"
-
-print("first subsection")
-print(word[0])
-print(word[-0])
-
-print("second subsection")
-print(word[-1])
-print(word[1:-1])
-
-print("third subsection")
-print(word[-3:])
-print(word[:3])
-""")
-
-
-
-print_chunk_of_code("type importance",
-"""
-print("1" == 1)
-# print(12 in 123) # TypeError
-""")
-
-
-
-print_chunk_of_code("unit tests by `assert_equal()`",
-""" 
-# https://github.com/python-bakery/bakery-support-library
-from bakery import assert_equal
-
-def calculate_area(length: int, width: int) -> int:
-    '''
-    This function calculates the area of a rectangle based on its dimensions. 
-    
-    Args:
-        length (int): The length of the rectangle in feet.
-        width (int): The width of the rectangle in feet.
-    Returns:
-        int: The area in square feet.
-    '''
-    area = length * width
-    return area
-
-assert_equal(calculate_area(5, 6), 30)
-assert_equal(calculate_area(0, 6), 0)
-assert_equal(calculate_area(4, 5), 21)
-""") 
-
-
-
-print_chunk_of_code("initialize in `if`",
-"""
-hour = 7
-
-# with `hour <=6` 
-# variable `time` will not be initialized
-# and this make an error
-
-if hour > 6:
-    time = "It is day light"
-
-print(time)
-""")
-
-
-
-print_chunk_of_code("truthy values",
-"""
-# This is False because True is not equal to 5
-print(True == 5)
-
-# This is True because 5 is Truthy
-print(True == bool(5))
-""")
-
-
-
-print_chunk_of_code("easy way to create a class by `dataclass`",
-"""
-# Required import
-from dataclasses import dataclass
-
-# Definition
-@dataclass
-class Box:
-    width: int
-    length: int
-
-
-# Instance creation
-my_box = Box(5, 10)
-
-# Using the instance
-print(my_box)
-""")
-
-
-
-
-print_chunk_of_code("change value of `dataclass`",
-"""
-from dataclasses import dataclass
-
-@dataclass
-class Dog:
-    name: str
-    age: int
-    is_fuzzy: bool
-
-ada = Dog("Ada Bart", 4, True)
-print("Ada's name is", ada.name)
-
-ada.name = "adam"
-print("Ada's name is", ada.name)
-""")
-
-
-
-
-print_chunk_of_code("`dataclass` with math operators",
-"""
-from dataclasses import dataclass
-
-@dataclass
-class Circle:
-    radius: int
-    color: str
-
-red_circle = Circle(5, "red")
-blue_circle = Circle(5, "blue")
-
-
-# All of these cause an error!
-# print(red_circle + blue_circle)
-# print(red_circle * blue_circle)
-# print(red_circle < blue_circle)
-
-
-# Both of these are True
-print(red_circle != blue_circle)
-print(red_circle == Circle(5, "red"))
-""")
-
-
-
-print_chunk_of_code("`dataclass` with functions",
-"""
-from bakery import assert_equal
-from dataclasses import dataclass
-
-@dataclass
-class Rectangle:
-    length: int
-    width: int
-
-def area(rect: Rectangle) -> int:
-    return rect.length * rect.width
-
-box = Rectangle(5, 3)
-assert_equal(area(box), 15)
-""")
-
-
-
-print_chunk_of_code("convert one `dataclass` to another `dataclass`",
-"""
-from dataclasses import dataclass
-from bakery import assert_equal
-
-@dataclass
-class Square:
-    color: str
-    width: int
-    
-@dataclass
-class Circle:
-    radius: int
-    color: str
-
-def square_to_circle(a_square: Square) -> Circle:
-    return Circle(a_square.width, a_square.color)
-
-assert_equal(square_to_circle(Square("red", 5)), Circle(2, "red"))
-assert_equal(square_to_circle(Square("blue", 3)), Circle(3, "blue"))
-""")
+print("David" not in names)
+# True
