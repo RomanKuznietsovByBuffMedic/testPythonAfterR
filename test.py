@@ -28,6 +28,7 @@ def print_chunk_of_code(chunk_title: str, code: str) -> None:
         '''
         print(colored("Code:", "green"), code)
         cprint("Result:", "blue")
+        # https://realpython.com/python-exec/
         exec(code, {})
 
 
