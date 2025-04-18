@@ -61,6 +61,7 @@ print([])
 print([45, "Hello", True, 3.14])
 """)
 
+
 print_chunk_of_code("truthy and falsy lists",
 """
 my_money = []
@@ -87,33 +88,79 @@ def function(alpha: list[str]) -> list[int]:
 """)
 
 
+print_chunk_of_code("order in lists",
+"""
 points = [1, 30, 9]
 ordered_points = [1, 9, 30]
 text_points = ["1", "9", "30"]
 
 print("points == ordered_points is " + str(points == ordered_points))
 print("points == text_points is " + str(points == text_points))
-# add + -  * / **  with lists
+""")                    
 
 
-
-
-
-
-
-
-
-
+print_chunk_of_code("lists: in and not in",
+"""
 names = ["Alice", "Bob", "Carol"]
 
 print("Carol" in names)
-# True
-
-print("Ellie" in names)
-# False
-
 print("Car" in names)
-# False
-
 print("David" not in names)
-# True
+""")
+
+
+print_chunk_of_code("lists: append",
+"""
+colors = ["red", "blue", "green"]
+
+# change list
+colors.append("cyan")
+print(colors)
+
+# This will cause an error!
+# print(colors + 'yellow')
+
+# This will work! But it will not change the list
+print(colors + ['yellow'])
+
+print(colors)
+""")
+
+
+print_chunk_of_code("lists: multiplication",
+"""
+numbers = [1, 2, 3]
+print(2 * numbers)
+print(-1 * numbers)
+print(0 * numbers)
+print(numbers)
+""")
+
+
+print_chunk_of_code("lists: pop",
+"""                  
+colors = ["red", "blue", "green"]
+
+last_color = colors.pop()
+
+print(colors)
+print(last_color)
+
+
+# This will cause an error!
+# print(colors - 'blue')
+
+
+# Error: pop from empty list
+# colors = []
+# magic = colors.pop()
+# print(colors)
+# print(magic)
+
+
+# Unsupported operation: list - list
+# colors = ["red", "blue", "green"]
+# colors - ["blue"]
+""")
+
+
