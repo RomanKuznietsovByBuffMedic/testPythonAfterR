@@ -164,3 +164,5 @@ print(last_color)
 """)
 
 
+# add comments code
+print("some shit")
